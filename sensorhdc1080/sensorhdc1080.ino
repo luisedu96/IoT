@@ -13,9 +13,9 @@ void loop() {
   double humedad = sensor.readHumidity();
   Serial.print("Temperatura = ");
   Serial.print(temperatura);
-  Serial.println("°C humedad = ");
+  Serial.print("°C humedad = ");
   Serial.print(humedad);
-  Serial.print("°C");
+  Serial.println("°C");
   delay(3000);
 
 }
