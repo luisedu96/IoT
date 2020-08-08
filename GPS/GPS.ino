@@ -15,11 +15,6 @@ void loop()
 {
   while (ss.available() > 0)
   {
-    int anInt = ss.read();
-    char achar = anInt;
-    oracion.concatenate()
-    
-    Serial.print(achar);
+    Serial.write(ss.read());
   }
-  Serial.print("finnnnnnnnn");
 }
