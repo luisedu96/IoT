@@ -4,7 +4,7 @@ const char* password = "2NJ557301874";
 //const char* ssid = "UPBWiFi";
 //const char* password = "";
 //poner la direccion IP del servidor
-const char* server = "52.87.195.146";
+const char* server = "35.174.0.161";
 double latitud= 6.2455678;
 double longitud= -75.4678888;
 double temperatura = 23;
@@ -64,7 +64,7 @@ void sendthingspeak()
   Serial.println("conectado");
   client.print("POST /datos HTTP/1.1\n");
   // poner la direccion IP del servidor 
-  client.print("Host: 52.87.195.146 \n");
+  client.print("Host: 35.174.0.161 \n");
   client.println("User-Agent: Arduino/1.0");
   client.println("Connection: close");
   client.println("Content-Type: application/x-www-form-urlencoded;");
